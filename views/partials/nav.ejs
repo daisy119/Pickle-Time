@@ -6,6 +6,20 @@
   <nav>
     <i>🏓</i>&nbsp&nbsp&nbsp
     <h3>Pickleball Time</h3>
+
+    <a 
+      href="/schedules/new" class=<%= title === 'ADD A MATCH' ? 'active' : '' %>
+    >
+      Add A Match
+    </a>
+
+    <a 
+      href="/schedules" class=<%= title === 'Current Schedule' ? 'active' : '' %>
+    >
+      Curren Schedule
+    </a>
+
+
     <% if (user) { %>
       <a href="/auth/logout" class="right">
         <button type="submit">Logout</button>
