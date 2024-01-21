@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
-  color: #f6f6f6;
+  background-color: #e8eceb;
+  color: #1a1a1a;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-  background-color: #f6f6f6;
+  background-color: #b8c0c2;
   color: #1a1a1a;
   display: flex;
   align-items: center;
@@ -34,6 +34,69 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p, label, li, button, input {
+  font-size: 18px;
+}
+
+label {
+  font-weight: bold;
+}
+
+section {
+  padding: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+pre {
+  font-size: 14px;
+}
+
+nav > a {
+  margin: 8px 24px;
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  margin: 16px 0;
+}
+
+.link {
+  padding: 12px 0;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.profile-avatar {
+  margin-top: 50px;
+}
+
+.inline {
+  display: inline;
 }
 
 .right {
