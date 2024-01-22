@@ -8,9 +8,8 @@ const matchSchema = new Schema({
   friends: String,
   fav: Boolean,
   // courtId: {type: Schema.Types.ObjectId, ref: "Court"},
-  // owner: {type: Schema.Types.ObjectId, ref: "Profile"},
+  owner: {type: Schema.Types.ObjectId, ref: "Profile"},
   courtId: String,
-  owner: String,
 }, {
   timestamps: true
 })
