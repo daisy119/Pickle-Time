@@ -3,18 +3,21 @@
 <%- include('../partials/nav') %>
 <main>
   <h1><%= title %></h1>
-  <form id="new-form" action="/flights" method="POST">
-
+  <% if (user) { %>
+  <form id="new-form" action="/matches" method="POST">
       <label for="date-input">Date:</label>
       <input type="datetime-local" name="date" id="date-input">
       <label for="durationHr-input">Duration Hour:</label>
       <input type='number' name="durationHr" id="durationHr-input">
       <label for="courtId-input">Court:</label>
-      <input type="text" name="courtId" id="courtId-input">
+      <input type="text" name="courtId" id="courtId-input" autocomplete="off">
+      <label for="fav-input">favorite:</label>
+      <input type="checkbox" name="fav" id="fav-input">
       <label for="friends-input">Opponent:</label>
-      <input type="text" name="friends" id="friends-input">
+      <input type="text" name="friends" id="friends-input" autocomplete="off">
     
-    <button type="submit">Bring it on☄️</button>
+    <button type="submit">Add a Match☄️</button>
   </form>
+  <% } %>
 </main>
 <%- include("../partials/footer") %>
