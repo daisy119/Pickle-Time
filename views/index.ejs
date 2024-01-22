@@ -2,7 +2,8 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
+  <h1>hello, <%= user ? user.profile.name : "friend" %>💚</h1>
+  
   <% if (user?.profile.avatar) { %>
     <div>
       <img
@@ -10,7 +11,9 @@
         alt="<%= user.profile.name %> avatar"
       />
     </div>
-  <% } %>
+  <% } else { %>
+    <h3> Please log in to have the full Pickle 🥒 experience.</h3>
+    <% } %>
 </main>
 
 <%- include('./partials/footer') %>
