@@ -83,6 +83,10 @@ function edit(req,res) {
   })
 }
 
+function update(req,res) {
+  console.log('bahhhh')
+}
+
 export {
   index,
   newMatch as new,
@@ -90,4 +94,5 @@ export {
   show,
   flipFav,
   edit,
+  update,
 }
