@@ -12,8 +12,8 @@ router.get('/new', matchesCtrl.new)
 router.get('/:matchId', matchesCtrl.show)
 //POST localhost:3000/matches
 router.post('/', isLoggedIn, matchesCtrl.create)
-//PATCH localhost:3000/matches/flipFav
-
+//PATCH localhost:3000/matches/:matchId/flipFav
+router.patch('/:matchId/flipFav', isLoggedIn, matchesCtrl.flipFav)
 
 export {
   router

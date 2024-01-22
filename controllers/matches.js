@@ -50,9 +50,29 @@ function show(req,res) {
   })
 }
 
+function flipFav(req,res) {
+  Match.findById(req.params.matchId)
+  .then(match =>{
+    match.fav =!match.fav
+    match.save()
+    .then(()=>{
+      res.redirect(`/matches/${match._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/matches')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/matches')
+  })
+}
+
 export {
   index,
   newMatch as new,
   create,
   show,
+  flipFav,
 }
