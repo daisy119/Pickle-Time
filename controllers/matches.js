@@ -107,7 +107,21 @@ function update(req,res) {
 }
 
 function deleteMatch(req,res) {
-console.log('mehh')
+  Match.findById(req.params.matchId)
+  .then(match =>{
+    if(match.owner.equals(req.user.profile._id)) {
+      match.deleteOne()
+      .then(() =>{
+        res.redirect('/matches')
+      })
+    } else {
+      throw new Error ('❌Not Authorized')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/matches')
+  })
 }
 
 export {
