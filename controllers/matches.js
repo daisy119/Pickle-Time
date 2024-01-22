@@ -84,7 +84,26 @@ function edit(req,res) {
 }
 
 function update(req,res) {
-  console.log('bahhhh')
+  Match.findById(req.params.matchId)
+  .then(match =>{
+    if(match.owner.equals(req.user.profile._id)) {
+      req.body.fav = !!req.body.fav
+      match.updateOne(req.body)
+      .then(()=> {
+        res.redirect(`/matches/${match._id}`)
+      })
+      .catch(err => {
+        console.log(err)
+        res.redirect('/matches')
+      })
+    }else {
+      throw new Error('❌Not Authorized')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/matches')
+  })
 }
 
 export {
