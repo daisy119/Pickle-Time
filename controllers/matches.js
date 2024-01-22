@@ -38,6 +38,7 @@ function show(req,res) {
   Match.findById(req.params.matchId)
   .populate("owner")
   .then(match =>{
+    console.log(match.owner)
     res.render('matches/show', {
       match: match,
       title: "Schedule Detail",
