@@ -120,6 +120,12 @@ nav > a.active {
   margin: 16px 0;
 }
 
+.btn-show {
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
 .link {
   padding: 12px 0;
   font-size: 18px;

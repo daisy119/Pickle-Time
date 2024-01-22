@@ -9,7 +9,7 @@
     <div>Match Date: </div>
     <div>
       <%= match.date %>
-      <a href="/matches/<%= match._id %>/edit"><button></button>Edit a Match✏️</a>
+      <!-- <a href="/matches/<%= match._id %>/edit"><button></button>Edit a Match✏️</a> -->
     </div>
     <div>Match Duration Hour: </div>
     <div><%= match.duration%></div>
@@ -25,10 +25,15 @@
         action="/matches/<%= match._id %>/flipFav?_method=PATCH" 
         method="POST"
       >
-        <button class="btn" type="submit">
+        <button class="btn-show" type="submit">
           Make this court <%= match.fav ? 'not a fav💔':'a fav💚✨'  %>
         </button>
       </form>
+      <% if (match.owner.equals(user?.profile._id)) { %>
+        <a href="/matches/<%= match._id %>/edit">
+          <button class="btn-show">Edit this Match ✍️</button>
+        </a>
+      <% } %>
     <% } %>
 
   </section>
