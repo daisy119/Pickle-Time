@@ -1,14 +1,45 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/matches/index.css" />
 <%- include('../partials/nav') %>
 
 <section>
   <h1>Upcoming Matches👟👟👟</h1>
   <h2>All the pickles🥒🏐!</h2>
-  <ul>
+
+  <table id="list">
+    <thead>
+      <tr>
+        <th>Match Date:</th>
+        <th>Court Name:</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% matches.forEach((match) => { %>
+      <tr>
+        <td><%= match.date %></td>
+        <td><%= match.courtId %></td>
+        <td><a href="/matches/<%= match._id %>">DETAILS</a></td>
+        <td>
+          <form 
+          action="/matches/<%= match._id %>?_method=DELETE"
+          method="POST"
+          >
+            <button type="submit">X</button>
+          </form>
+        </td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+
+
+  <!-- <ul>
     <% matches.forEach(match => { %>
       <li>📅 match date: <%= match.date%>   🥅 court-name:<%= match.courtId%> </li>
     <% }) %>
-  </ul>
+  </ul> -->
 </section>
 
 <%- include('../partials/footer') %>
