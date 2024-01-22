@@ -1,0 +1,14 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>Upcoming Matches👟👟👟</h1>
+  <h2>All the pickles🥒🏐!</h2>
+  <ul>
+    <% matches.forEach(match => { %>
+      <li>🥅 <%= match.date %> </li>
+    <% }) %>
+  </ul>
+</section>
+
+<%- include('../partials/footer') %>
