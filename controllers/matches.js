@@ -38,7 +38,7 @@ function show(req,res) {
   Match.findById(req.params.matchId)
   .populate("owner")
   .then(match =>{
-    res.render('match/show', {
+    res.render('matches/show', {
       match: match,
       title: "Schedule Detail",
     })

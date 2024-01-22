@@ -9,14 +9,16 @@
     <div>Match Date: </div>
     <div>
       <%= match.date %>
-      <a href="/matches/<%= match._id %>/edit"><button></button>Edit a Match</a>
+      <a href="/matches/<%= match._id %>/edit"><button></button>Edit a Match✏️</a>
     </div>
-    <div>Airport: </div>
-    <div><%= flight.airport %></div>
-    <div>Flight No: </div>
-    <div><%= flight.flightNo %></div>
-    <div>Departs: </div>
-    <div><%= flight.departs %></div>
+    <div>Match Duration Hour: </div>
+    <div><%= match.duration%></div>
+    <div>Court Name: </div>
+    <div><%= match.courtId %></div>
+    <div>Fav Court: </div>
+    <div><%= match.fav %></div>
+    <div>Match Opponent: </div>
+    <div><%= match.friends %></div>
 
   </section>
 
