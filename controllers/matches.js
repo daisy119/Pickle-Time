@@ -26,11 +26,11 @@ function create(req,res) {
   req.body.fav = !!req.body.fav
   Match.create(req.body)
   .then(match =>{
-    res.redirect('/matches/new')
+    res.redirect('/matches')
   })
   .catch(err =>{
     console.log(err)
-    res.redirect('/matches/new')
+    res.redirect('/matches')
   })
 }
 
