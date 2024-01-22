@@ -106,6 +106,10 @@ function update(req,res) {
   })
 }
 
+function deleteMatch(req,res) {
+console.log('mehh')
+}
+
 export {
   index,
   newMatch as new,
@@ -114,4 +118,5 @@ export {
   flipFav,
   edit,
   update,
+  deleteMatch as delete,
 }
