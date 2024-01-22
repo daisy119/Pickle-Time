@@ -5,15 +5,15 @@
   <h1><%= title %></h1>
   <% if (user) { %>
   <form id="new-form" action="/matches" method="POST">
-      <label for="date-input">Date:</label>
+      <label for="date-input">Match Date:</label>
       <input type="datetime-local" name="date" id="date-input">
-      <label for="durationHr-input">Duration Hour:</label>
+      <label for="durationHr-input">Match Duration Hour:</label>
       <input type='number' name="durationHr" id="durationHr-input">
-      <label for="courtId-input">Court:</label>
+      <label for="courtId-input">Court Name:</label>
       <input type="text" name="courtId" id="courtId-input" autocomplete="off">
-      <label for="fav-input">favorite:</label>
+      <label for="fav-input">favorite Court:</label>
       <input type="checkbox" name="fav" id="fav-input">
-      <label for="friends-input">Opponent:</label>
+      <label for="friends-input">Match Opponent:</label>
       <input type="text" name="friends" id="friends-input" autocomplete="off">
     
     <button type="submit">Add a Match☄️</button>

@@ -34,8 +34,24 @@ function create(req,res) {
   })
 }
 
+function show(req,res) {
+  Match.findById(req.params.matchId)
+  .populate("owner")
+  .then(match =>{
+    res.render('match/show', {
+      match: match,
+      title: "Schedule Detail",
+    })
+  })
+  .catch(err =>{
+    console.log(err)
+    res.redirect('/matches')
+  })
+}
+
 export {
   index,
   newMatch as new,
   create,
+  show,
 }
