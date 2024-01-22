@@ -20,6 +20,17 @@
     <div>Match Opponent: </div>
     <div><%= match.friends %></div>
 
+    <% if (user) { %>
+      <form 
+        action="/matches/<%= match._id %>/flipFav?_method=PATCH" 
+        method="POST"
+      >
+        <button class="btn" type="submit">
+          Make this court <%= match.fav ? 'not a fav💔':'a fav💚✨'  %>
+        </button>
+      </form>
+    <% } %>
+
   </section>
 
   

@@ -12,6 +12,7 @@ router.get('/new', matchesCtrl.new)
 router.get('/:matchId', matchesCtrl.show)
 //POST localhost:3000/matches
 router.post('/', isLoggedIn, matchesCtrl.create)
+//PATCH localhost:3000/matches/flipFav
 
 
 export {
