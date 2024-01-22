@@ -41,7 +41,7 @@ function show(req,res) {
     console.log(match.owner)
     res.render('matches/show', {
       match: match,
-      title: "Schedule Detail",
+      title: "🔍Match Schedule Detail",
     })
   })
   .catch(err =>{
