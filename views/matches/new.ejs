@@ -3,23 +3,18 @@
 <%- include('../partials/nav') %>
 <main>
   <h1><%= title %></h1>
-  <form id="new-form" action="" method="">
-    <label for="title-input">Title:</label>
-    <input type="text" name="title" id="title-input">
-    <label for="release-year-input">Release Year:</label>
-    <input type="text" name="releaseYear" id="release-year-input">
-    <label for="mpaa-rating-select">MPAA Rating:</label>
-    <select name="mpaaRating" id="mpaa-rating-select">
-      <option value="G">G</option>
-      <option value="PG">PG</option>
-      <option value="PG-13">PG-13</option>
-      <option value="R">R</option>
-    </select>
-    <label for="cast-input">Cast (separate actors with commas):</label>
-    <input type="text" name="cast" id="cast-input">
-    <label for="now-showing-checkbox">Now Showing:</label>
-    <input type="checkbox" name="nowShowing" id="now-showing-checkbox" checked>
-    <button type="submit">Add Movie</button>
+  <form id="new-form" action="/flights" method="POST">
+
+      <label for="date-input">Date:</label>
+      <input type="datetime-local" name="date" id="date-input">
+      <label for="durationHr-input">Duration Hour:</label>
+      <input type='number' name="durationHr" id="durationHr-input">
+      <label for="courtId-input">Court:</label>
+      <input type="text" name="courtId" id="courtId-input">
+      <label for="friends-input">Opponent:</label>
+      <input type="text" name="friends" id="friends-input">
+    
+    <button type="submit">Bring it on☄️</button>
   </form>
 </main>
 <%- include("../partials/footer") %>
