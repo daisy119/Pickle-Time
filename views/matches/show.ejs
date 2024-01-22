@@ -29,10 +29,15 @@
           Make this court <%= match.fav ? 'not a fav💔':'a fav💚✨'  %>
         </button>
       </form>
+
       <% if (match.owner.equals(user?.profile._id)) { %>
         <a href="/matches/<%= match._id %>/edit">
           <button class="btn-show">Edit this Match ✍️</button>
         </a>
+
+        <form action="/matches/<%= match._id %>?_method=DELETE" method="POST">
+          <button class="btn-show" type="submit">Delete this match ✂️</button>
+        </form>
       <% } %>
     <% } %>
 
