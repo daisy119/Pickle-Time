@@ -11,8 +11,7 @@
     <input type="datetime-local" value="<%= match.date.toISOString().slice(0, 16) %>" name="date" id="date-input">
     <label for="durationHr-input">Match Duration Hour:</label>
     <input type='number' value="<%= match.durationHr %>" name="durationHr" id="durationHr-input">
-    <label for="courtId-input">Court Name:</label>
-    <input type="text" value="<%= match.courtId %>" name="courtId" id="courtId-input" autocomplete="off">
+
     <label for="fav-input">favorite Court:</label>
     <input type="checkbox" <%= match.fav? "checked" : "" %> name="fav" id="fav-input">
     <label for="friends-input">Match Opponent:</label>
