@@ -26,6 +26,20 @@ function create(req,res) {
   })
 }
 
+function show(req,res) {
+  Court.findById(req.params.courtId)
+  .then(court =>{
+    res.render('courts/show', {
+      court,
+      title: "🥅Court details"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/courts")
+  })
+}
+
 function createComment(req,res) {
   Court.findById(req.params.courtId)
   .then(court =>{
@@ -52,4 +66,5 @@ export {
   newCourt as new,
   create,
   createComment,
+  show,
 }

@@ -1,0 +1,21 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/courts/show.css" />
+<%- include('../partials/nav') %>
+<main>
+<h1><%= title %></h1>
+<section>
+
+
+  <div>Court Name: </div>
+  <div>
+    <%= court.name %>
+    <a href="/courts/<%= court._id %>/edit"><button></button>Edit a Court</a>
+  </div>
+  <div>Location: </div>
+  <div><%= court.location %></div>
+  <div>Phone Number: </div>
+  <div><%= court.phoneNumber %></div>
+
+</section>
+</main>
+<%- include('../partials/footer') %>
