@@ -12,7 +12,10 @@ html {
 }
 
 body {
-  background-color: #e8eceb;
+  background-color: #81A178;
+  /* background-image: url('/images/pickleball_xl.png');
+  background-size: cover;
+  background-position: center; */
   color: #1a1a1a;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
@@ -32,7 +35,7 @@ body {
 
 body > nav {
   grid-area: nav;
-  background-color: #b8c0c2;
+  background-color: #407195;
   display: flex;
   justify-content: flex-end;
   align-items: center;
