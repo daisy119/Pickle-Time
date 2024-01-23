@@ -21,7 +21,7 @@ function newMatch(req,res) {
 }
 
 function create(req,res) {
-  console.log(req.user)
+  // console.log(req.user)
   req.body.owner = req.user.profile._id
   req.body.fav = !!req.body.fav
   Match.create(req.body)

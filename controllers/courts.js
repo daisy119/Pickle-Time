@@ -15,6 +15,7 @@ function newCourt(req, res) {
 }
 
 function create(req,res) {
+  req.body.owner = req.user.profile._id
   Court.create(req.body)
   .then(court =>{
     res.redict('/courts/new')

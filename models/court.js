@@ -12,7 +12,7 @@ const commentSchema = new Schema({
 const courtSchema = new Schema({
   name: {type: String, required: true},
   location: String,
-  phoneNuber: String,
+  phoneNumber: String,
   // author: [commentSchema]
 }, {
   timestamps: true
