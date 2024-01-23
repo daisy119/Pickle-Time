@@ -2,6 +2,7 @@
 
 
 ## **[Play the game here](https://pickleballtracker.fly.dev)**
+## **[Trello Board](https://trello.com/b/wEddks1y/pickle-ball-tracker)**
 
 # 💻 Technologies used 
 
