@@ -1,0 +1,33 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/courts/new.css" />
+<%- include('../partials/nav') %>
+
+<main>
+	<h1><%= title %></h1>
+  <% if (user) { %>
+  <p>Please first ensure that the Court is not in the dropdown
+    <select>
+      <% courts.forEach(function(court) { %>
+        <option><%= court.name %></option>
+      <% }) %>
+    </select>
+  </p>
+  <form id="add-court-form" action="/courts" method="POST">
+    <label for="name-input">Court Name:</label>
+    <input type="text" name="name" id="name-input">
+
+    <label for="location-input">Location:</label>
+    <input type="text" name="location" id="location-input">
+
+    <label for="phoneNumber-input">Phone Number:</label>
+    <input type="text" name="phoneNumber" id="phoneNumber-input">
+
+    <button type="submit">Add a Court</button>
+  </form>
+
+  <% } else { %>
+    <h3>Please log in to add court info🥺</h3>
+    <% } %>
+</main>
+
+<%- include('../partials/footer') %>
