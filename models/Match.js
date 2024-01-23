@@ -15,9 +15,9 @@ const matchSchema = new Schema({
     min: 1,
   },
   friends: String,
+  courts: [{type: Schema.Types.ObjectId, ref: 'Court'}],
   fav: Boolean,
   owner: {type: Schema.Types.ObjectId, ref: "Profile"},
-  // courtId: String,
 }, {
   timestamps: true
 })

@@ -1,4 +1,5 @@
 import { Match } from '../models/match.js'
+import {Court} from '../models/court.js'
 
 function index(req, res) {
   Match.find({})
@@ -26,7 +27,7 @@ function create(req,res) {
   req.body.fav = !!req.body.fav
   Match.create(req.body)
   .then(match =>{
-    res.redirect('/matches')
+    res.redirect(`/matches/${match._id}`)
   })
   .catch(err =>{
     console.log(err)
@@ -37,12 +38,20 @@ function create(req,res) {
 function show(req,res) {
   Match.findById(req.params.matchId)
   .populate("owner")
+  .populate("courts")
   .then(match =>{
-    console.log(match.durationHr)
-    console.log(match.owner)
-    res.render('matches/show', {
-      match: match,
-      title: "🔍Match Schedule Detail",
+    Court.find({_id: {$nin: match.court}})
+    .then(courts =>{
+      console.log(courts)
+      res.render('matches/show', {
+        match: match,
+        title: "🔍Match Schedule Detail",
+        courts: courts,
+      })
+    })
+    .catch(err =>{
+      console.log(err)
+      res.redirect('/matches')
     })
   })
   .catch(err =>{
@@ -125,6 +134,30 @@ function deleteMatch(req,res) {
   })
 }
 
+function addCourts(req,res) {
+  //find a match
+  //add the court Id to the court array
+  //save the match
+  //redirect to the match show view
+  Match.findById(req.params.matchId)
+  .then(match =>{
+    match.courts.push(req.body.courtId)
+    match.save()
+    .then(() =>{
+      res.redirect(`/matches/${match._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/matches')
+    })
+
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/matches')
+  })
+}
+
 export {
   index,
   newMatch as new,
@@ -134,4 +167,5 @@ export {
   edit,
   update,
   deleteMatch as delete,
+  addCourts,
 }

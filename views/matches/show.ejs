@@ -17,7 +17,25 @@
     <div>Match Opponent: </div>
     <div><%= match.friends %></div>
 
+    <div>Match Court:</div>
+    <ul>
+      <% match.courts.forEach(court => { %>
+        <li><%= court.name %></li>
+      <% }) %>
+    </ul>
+
+
     <% if (user) { %>
+
+      <form id="add-per-to-cast" action="/matches/<%= match._id %>/courts" method="POST">
+        <select name="courtId">
+          <% courts.forEach(court => { %>
+            <option value="<%= court._id %>"><%= court.name %></option>
+          <% }) %>
+        </select>
+        <button type="submit">Add a Court</button>
+      </form><br>
+
       <form 
         action="/matches/<%= match._id %>/flipFav?_method=PATCH" 
         method="POST"
@@ -40,6 +58,7 @@
 
   </section>
 
+ 
   
 
 </main>
