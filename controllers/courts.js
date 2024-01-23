@@ -46,8 +46,8 @@ function createComment(req,res) {
     console.log(req.body)
     court.comments.push(req.body)
     court.save()
-    console.log(court.comments)
     .then(() => {
+      console.log(court.comments)
       res.redirect(`/courts/${court._id}`)
     })
     .catch(err => {
