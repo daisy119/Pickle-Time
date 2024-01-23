@@ -139,6 +139,7 @@ function addCourts(req,res) {
   //add the court Id to the court array
   //save the match
   //redirect to the match show view
+  req.body.owner = req.user.profile._id
   Match.findById(req.params.matchId)
   .then(match =>{
     match.courts.push(req.body.courtId)
@@ -158,6 +159,10 @@ function addCourts(req,res) {
   })
 }
 
+function createComment(req,res) {
+  console.log('bonne soiree')
+}
+
 export {
   index,
   newMatch as new,
@@ -168,4 +173,5 @@ export {
   update,
   deleteMatch as delete,
   addCourts,
+  createComment,
 }
