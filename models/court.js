@@ -10,10 +10,10 @@ const commentSchema = new Schema({
 })
 
 const courtSchema = new Schema({
-  name: String,
+  name: {type: String, required: true},
   location: String,
   phoneNuber: String,
-  author: [commentSchema]
+  // author: [commentSchema]
 }, {
   timestamps: true
 })
