@@ -5,7 +5,7 @@
 <h1><%= title %></h1>
 <section>
 
-
+  <% if (user) { %>
   <div>⛳️Court Name: </div>
   <div>
     <%= court.name %>
@@ -60,6 +60,7 @@
     </select>
     <button type="submit">Add Comment</button>
   </form>
-
+  <% } %>
+  
 </main>
 <%- include('../partials/footer') %>
