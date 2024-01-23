@@ -8,6 +8,8 @@ const router = Router()
 router.get('/new', courtsCtrl.new)
 //POST localhost:3000/courts
 router.post('/',isLoggedIn, courtsCtrl.create)
+//Post localhost:3000/courts/:courtId/comments
+router.post('/:courtId/comments', isLoggedIn, courtsCtrl.createComment)
 
 export {
   router

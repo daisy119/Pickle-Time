@@ -159,9 +159,6 @@ function addCourts(req,res) {
   })
 }
 
-function createComment(req,res) {
-  console.log('bonne soiree')
-}
 
 export {
   index,
@@ -173,5 +170,4 @@ export {
   update,
   deleteMatch as delete,
   addCourts,
-  createComment,
 }

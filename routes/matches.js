@@ -14,8 +14,6 @@ router.get('/:matchId', matchesCtrl.show)
 router.get('/:matchId/edit', isLoggedIn, matchesCtrl.edit)
 //POST localhost:3000/matches
 router.post('/', isLoggedIn, matchesCtrl.create)
-//Post localhost:3000/matches/:matchId/comments
-router.post('/:matchId/comments', isLoggedIn, matchesCtrl.createComment)
 //POST localhost:3000/matches/:matchId/courts
 router.post('/:matchId/courts',isLoggedIn,  matchesCtrl.addCourts)
 //PATCH localhost:3000/matches/:matchId/flipFav
