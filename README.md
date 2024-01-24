@@ -12,7 +12,7 @@
 * <a>![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)</a>
 
 # 💌 Attributions 
-# css
+* # css
 * [Copy-paste-css](https://copy-paste-css.com/)
 * [Gradient Maker](https://coolors.co/gradient-maker/ddb4f6-8dd0fc)
 * [Flaticon](https://www.flaticon.com/)
