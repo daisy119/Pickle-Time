@@ -13,9 +13,9 @@
 
 # 💌 Attributions 
 # css
-[Copy-paste-css](https://copy-paste-css.com/)
-[Gradient Maker](https://coolors.co/gradient-maker/ddb4f6-8dd0fc)
-[Flaticon](https://www.flaticon.com/)
+* [Copy-paste-css](https://copy-paste-css.com/)
+* [Gradient Maker](https://coolors.co/gradient-maker/ddb4f6-8dd0fc)
+* [Flaticon](https://www.flaticon.com/)
 
 
 
