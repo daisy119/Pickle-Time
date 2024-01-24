@@ -45,7 +45,7 @@ function show(req,res) {
       console.log(courts)
       res.render('matches/show', {
         match: match,
-        title: "🔍Match Schedule Detail",
+        title: "Match Schedule Detail🔍",
         courts: courts,
       })
     })

@@ -27,11 +27,20 @@ form * {
   border-radius: 5px;
 }
 
-section {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 16px;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
+
+section {
+  /* display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 16px; */
+}
+
 
 section div:nth-child(even) {
   font-weight: bold;

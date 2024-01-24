@@ -2,22 +2,22 @@
 <link rel="stylesheet" href="/stylesheets/courts/show.css" />
 <%- include('../partials/nav') %>
 <main>
-<h1><%= title %></h1>
-<section>
 
-  
-  <div>⛳️Court Name: </div>
+<section>
+  <h2><%= title %></h2>
+  <div>Court Name: </div>
   <div>
     <%= court.name %>
     <a href="/courts/<%= court._id %>/edit"><button></button>Edit a Court</a>
   </div>
-  <div>📍Location: </div>
+  <div>Location: </div>
   <div><%= court.location %></div>
-  <div>☎️Phone Number: </div>
+  <div>Phone Number: </div>
   <div><%= court.phoneNumber %></div>
 
 </section>
 
+<aside>
 <h2>Comments</h2>
 
 <% if (court.comments.length) { %>
@@ -61,6 +61,6 @@
     <button type="submit">Add Comment</button>
   </form>
   <% } %>
-
+</aside>
 </main>
 <%- include('../partials/footer') %>

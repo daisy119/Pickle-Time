@@ -31,7 +31,7 @@ function show(req,res) {
   .then(court =>{
     res.render('courts/show', {
       court,
-      title: "🥅Court details"
+      title: "Court details"
     })
   })
   .catch(err => {

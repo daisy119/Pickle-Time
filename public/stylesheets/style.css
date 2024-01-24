@@ -128,16 +128,16 @@ pre {
 }
 
 nav > a:visited {
-  color: #424748;
+  color: #1a1a1a;
 }
 
 nav > a:hover {
-  color: white;
-  background-color: #424748;
+  color: ghostwhite;
+  background-color: rgba(111,123,247,0.6);
 }
 
 nav > a.active {
-  color: white;
+  color: ghostwhite;
 }
 
 
@@ -169,4 +169,7 @@ nav > a.active {
   margin-left: auto;
 }
 
+#small-logo {
+  width: 48px;
+}
 
