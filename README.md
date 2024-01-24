@@ -16,7 +16,7 @@
 
 
 # 🧊 Ice Box  
-- [ ] add google fonts
+- [x] add google fonts
 - [ ] Confetti
 - [ ] dark/light mode
 
