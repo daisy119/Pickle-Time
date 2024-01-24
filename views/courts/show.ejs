@@ -30,18 +30,26 @@
         </tr>
       </thead>
       <tbody>
+        <% let total = 0 %>
         <% court.comments.forEach(function(comment) { %>
           <tr>
             <td><%= comment.createdAt.toLocaleDateString() %></td>
             <td><%= comment.content %></td>
             <td><%= comment.rating %></td>
           </tr>
+          <% total += comment.rating %>
         <% }) %>
+        <tr>
+          <td colspan="'3">Average rating</td>
+          <td><%= (court.comments.length>0)? (total/court.comments.length).toFixed(2) :'No Ratings yet' %></td>
+        </tr>
       </tbody>
     </table>
   <% } else { %>
     <h3>No Comments Yet</h3>
   <% } %>
+
+
   <% if (user) { %>
 <form 
     id="add-review-form"
