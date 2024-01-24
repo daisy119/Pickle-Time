@@ -19,7 +19,7 @@ body {
   color: #1a1a1a;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
-    'Helvetica Neue', sans-serif;
+    'Helvetica Neue', sans-serif, 'Montserrat', 'Open Sans', 'Poppins', ;
   margin: 0;
 }
 
@@ -40,6 +40,7 @@ body > nav {
   justify-content: flex-end;
   align-items: center;
   padding: 0 20px 0 30px;
+  font-family: 'Montserrat';
 }
 
 nav > a {
