@@ -15,7 +15,9 @@ html {
 }
 
 body {
-  background-color: #81A178;
+  /* background-color: #81A178;
+   */
+   background-color: #9BF8F4;
   /* background-image: url('/images/pickleball_xl.png');
   background-size: cover;
   background-position: center; */
@@ -39,7 +41,17 @@ body {
 
 body > nav {
   grid-area: nav;
-  background-color: #407195;
+  /* background-color: #407195;
+    */
+  background: hsla(177, 87%, 79%, 1);
+
+  background: linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9bf8f4", endColorstr="#6f7bf7", GradientType=1 );
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -74,6 +86,10 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.3);
 }
 
 h1 {
