@@ -21,8 +21,7 @@
     <ul>
       <% match.courts.forEach(court => { %>
         <li><%= court.name %></li>
-        <a href="/courts/<%= court._id %>"> <button class="btn-show">DETAILS🔎</button>
-      </a>
+        <a href="/courts/<%= court._id %>"> DETAILS🔎</a>
 
       <% }) %>
     </ul>

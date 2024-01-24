@@ -17,3 +17,9 @@ form > button {
   margin-left: auto;
   font-size: 22px;
 }
+
+#button-center {
+  margin: 0 auto;
+  width: 200px;
+
+}

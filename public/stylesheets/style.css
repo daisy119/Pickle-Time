@@ -52,6 +52,7 @@ body > nav {
   padding: 0 20px 0 30px;
   font-family: 'Playfair Display', serif;
   font-size: 20px;
+
 }
 
 nav > a {
@@ -140,15 +141,47 @@ nav > a.active {
   color: ghostwhite;
 }
 
+form > button {
 
-.btn {
-  margin: 16px 0;
+  padding: 10px;
+  background-color: ghostwhite;
+  border-radius: 400px;
+  border: 1px solid #6f7bf7;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  
+}
+
+input {
+  display: inline-block;
+  padding: 0 16px 0 12px;
+  width: 100%;
+  line-height: 30px;
+  height: 32px;
+  border: 1px solid rgba(155,248,244);
+  border-radius: 4px;
+  background-color: ghostwhite;
+  color: rgb(8, 7, 7);
+  transition: border .1s linear,background-color .1s linear;
+  :focus{
+      border-color: #6f7bf7;
+      color: var(--sds-c-input-text-color-focus);
+      box-shadow: rgb(111,123,247) 0px 0px 3px 0px;
+  }
 }
 
 .btn-show {
-  padding: 5px;
-  border-radius: 5px;
 
+  padding: 10px;
+  background-color: ghostwhite;
+  border-radius: 400px;
+  border: 1px solid #6f7bf7;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  color: black;
 }
 
 .link {
