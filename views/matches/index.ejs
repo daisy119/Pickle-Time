@@ -10,7 +10,7 @@
     <thead>
       <tr>
         <th>Match Date:</th>
-        <th>Court Name:</th>
+        <th>Opponent:</th>
         <th></th>
         <th></th>
       </tr>
@@ -19,8 +19,8 @@
       <% matches.forEach((match) => { %>
       <tr>
         <td><%= match.date %></td>
-        <td><%= match.courtId %></td>
-        <td><a href="/matches/<%= match._id %>">DETAILS🔎</a></td>
+        <td><%= match.friends %></td>
+        <td><a href="/matches/<%= match._id %>">🔎</a></td>
         <!-- <td>
           <form 
           action="/matches/<%= match._id %>?_method=DELETE"
