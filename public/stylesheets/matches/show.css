@@ -56,9 +56,28 @@ section div:nth-child(even) {
 }
 
 #court-related {
-  border: 2px solid greenyellow;
+
+justify-content: center;
+align-items: center;
+  
 }
 
 #match-related {
-  border: 2px solid red;
+
+  width: 245px;
+}
+
+#detail-btn {
+width: 500px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;;
+margin-top: 5px;
+
+}
+
+.btn-detail{
+  /* margin: 10px 0 0 0; */
+  width: 250px;
 }

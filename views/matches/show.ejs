@@ -24,35 +24,40 @@
       <% }) %>
     </ul>
   </section>
-
+  
+  <div id="detail-btn">
     <% if (user) { %>
-
+      <div id="court-related">
       <form id="add-per-to-cast" action="/matches/<%= match._id %>/courts" method="POST">
         <select name="courtId">
           <% courts.forEach(court => { %>
             <option value="<%= court._id %>"><%= court.name %></option>
           <% }) %>
         </select>
-        <button type="submit">Add a Court</button>
-      </form><br>
+        <button class="btn-detail" type="submit">Add a Court</button>
+      </form>
 
       <form 
         action="/matches/<%= match._id %>/flipFav?_method=PATCH" 
         method="POST"
       >
-        <button class="btn-show" type="submit">
+        <button class="btn-show btn-detail" type="submit">
           Make this court <%= match.fav ? 'not a fav💔':'a fav💚✨'  %>
         </button>
-      </form>
+      </form></div>
 
+      <div id="match-related">
       <% if (match.owner.equals(user?.profile._id)) { %>
         <a href="/matches/<%= match._id %>/edit">
-          <button class="btn-show">Edit this Match ✍️</button>
+          <button class="btn-show btn-detail">Edit this Match ✍️</button>
         </a>
 
         <form action="/matches/<%= match._id %>?_method=DELETE" method="POST">
-          <button class="btn-show" type="submit">Delete this match ✂️</button>
+          <button class="btn-show btn-detail" type="submit">Delete this match ✂️</button>
         </form>
+      </div>
+    </div>
+
       <% } %>
     
 
