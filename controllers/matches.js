@@ -22,6 +22,9 @@ function newMatch(req,res) {
 }
 
 function create(req,res) {
+  for (let key in req.body) {
+    if (req.body[key] === '') delete req.body[key]
+	}
   // console.log(req.user)
   req.body.owner = req.user.profile._id
   req.body.fav = !!req.body.fav
@@ -32,8 +35,9 @@ function create(req,res) {
   .catch(err =>{
     console.log(err)
     res.redirect('/matches')
-  })
-}
+  })  
+  }
+
 
 function show(req,res) {
   Match.findById(req.params.matchId)

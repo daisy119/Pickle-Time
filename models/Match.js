@@ -6,10 +6,13 @@ const matchSchema = new Schema({
   date: {
     type: Date,
     default: function() {
-      const currentYearDate = new Date(currentDate)
-      return currentYearDate
+      const currentDate = new Date();
+      const nextDay = new Date(currentDate);
+      nextDay.setDate(currentDate.getDate() +1 );
+      return nextDay
     },
   },
+
   durationHr: {
     type: Number,
     min: 1,
