@@ -4,10 +4,67 @@
 </head>
 <body>
   <nav>
-    <a href="/"><img src="/images/smalllogo.png" id="small-logo" alt="pickleball logo"></a>
-    <h3 id="pickly-nav">Pickleball Time</h3>
+    <ul id="primary-navigation" class="primary-navigation flex">
+      <li class="active">
+        <a href="/">
+          <span aria-hidden="true">
+            00
+          </span>Home
+        </a>
+        
+      </li>
+      <li>
+        <a href="/courts/new">
+          <span aria-hidden="true">
+            01
+          </span>Add A Court
+        </a>
+      </li>
+    </ul>
+    <li>
+      <a href="/matches/new">
+        <span aria-hidden="true">
+          02
+        </span>Add A Match
+      </a>
+    </li>
+    <li>
+      <a href="/matches">
+        <span aria-hidden="true">
+          03
+        </span>Current Schedule
+      </a>
+    </li>
+    <li>
+      <% if (user) { %>
+      <a href="/auth/logout">
+        <span aria-hidden="true">
+          04
+        </span>Logout
+      </a>
+      <% } else { %>
+        <div 
+        id="g_id_onload"
+        data-client_id="<%= googleClientID %>"
+        data-login_uri="/auth/google"
+        data-auto_prompt="false"
+        data-prompt_parent_id="g_id_onload"
+      ></div>
+      <div 
+        class="g_id_signin right"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left"
+      ></div>
+    <% } %>
+    </li>
+  </ul>
 
-    <a 
+
+    <!-- <a 
       href="/courts/new" class=<%= title === 'ADD A Court' ? 'active' : '' %>
     >
       🥅 Add A Court
@@ -23,9 +80,9 @@
       href="/matches" class=<%= title === 'Current Schedule' ? 'active' : '' %>
     >
       📝 Current Schedule
-    </a>
+    </a> -->
 
-
+<!-- 
     <% if (user) { %>
       <a href="/auth/logout" class="right">
         Logout
@@ -47,5 +104,5 @@
         data-shape="rectangular"
         data-logo_alignment="left"
       ></div>
-    <% } %>
+    <% } %> -->
   </nav>

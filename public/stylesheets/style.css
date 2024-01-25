@@ -17,11 +17,11 @@ html {
 body {
   /* background-color: #81A178;
    */
-   background-color: #9BF8F4;
+  background-color: #9BF8F4;
   /* background-image: url('/images/pickleball_xl.png');
   background-size: cover;
   background-position: center; */
-  color: #1a1a1a;
+  color: #333333;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif ;
@@ -129,7 +129,7 @@ pre {
 }
 
 nav > a:visited {
-  color: #1a1a1a;
+  color: #333333;
 }
 
 nav > a:hover {
@@ -150,7 +150,7 @@ form > button {
   cursor: pointer;
   font-size: 18px;
   text-align: center;
-  color: black;
+  color: #333333;
   
 }
 
@@ -164,7 +164,7 @@ input {
   border: 1px solid rgba(155,248,244);
   border-radius: 4px;
   background-color: ghostwhite;
-  color: rgb(8, 7, 7);
+  color: #333333;
   transition: border .1s linear,background-color .1s linear;
   :focus{
       border-color: #6f7bf7;
@@ -203,9 +203,7 @@ input {
   margin-left: auto;
 }
 
-#small-logo {
-  width: 48px;
-}
+
 
 
 
