@@ -84,10 +84,10 @@ function flipFav(req,res) {
 function edit(req,res) {
   Match.findById(req.params.matchId)
   .then(match => {
-   res.render('matches/edit', {
-    match: match,
-    title:"✍️Edit a Match Schedule"
-   })
+    res.render('matches/edit', {
+      match: match,
+      title:"✍️Edit a Match Schedule"
+    })
   })
   .catch(err => {
     console.log(err)
