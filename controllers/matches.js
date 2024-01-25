@@ -17,7 +17,7 @@ function index(req, res) {
 
 function newMatch(req,res) {
   res.render("matches/new", {
-    title: "Add Match",
+    title: "Add a Match",
   })
 }
 
