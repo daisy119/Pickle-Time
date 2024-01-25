@@ -25,7 +25,6 @@ function create(req,res) {
   for (let key in req.body) {
     if (req.body[key] === '') delete req.body[key]
 	}
-  // console.log(req.user)
   req.body.owner = req.user.profile._id
   req.body.fav = !!req.body.fav
   Match.create(req.body)
@@ -46,7 +45,6 @@ function show(req,res) {
   .then(match =>{
     Court.find({_id: {$nin: match.court}})
     .then(courts =>{
-      console.log(courts)
       res.render('matches/show', {
         match: match,
         title: "Match Schedule Detail🔍",
