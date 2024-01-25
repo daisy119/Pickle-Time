@@ -18,7 +18,7 @@
     <tbody>
       <% matches.forEach((match) => { %>
       <tr>
-        <td><%= match.date %></td>
+        <td><%= match.date.toLocaleDateString('en-US', {dataStyle : 'short'})%> <%=match.date.toLocaleString('en-US', {dataStyle : 'short', timeStyle:'short'})%></td>
         <td><%= match.friends %></td>
         <td><a href="/matches/<%= match._id %>">🔎</a></td>
         <!-- <td>
