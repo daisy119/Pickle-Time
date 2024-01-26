@@ -41,17 +41,17 @@
         method="POST"
       >
         <button id="detail-fav" class="btn-show btn-detail" type="submit">
-          Make this court <%= match.fav ? 'not a fav💔':'a fav💚✨'  %>
+          Make the court <%= match.fav ? 'not a fav💔':'a fav💚✨'  %>
         </button>
       </form>
       </div>
       <div id="match-related">
       <% if (match.owner.equals(user?.profile._id)) { %>
         <a href="/matches/<%= match._id %>/edit">
-          <button class="btn-show btn-detail">Edit this Match ✍️</button>
+          <button class="btn-show btn-detail">Edit the Match ✍️</button>
         </a>
         <form action="/matches/<%= match._id %>?_method=DELETE" method="POST">
-          <button class="btn-show btn-detail" type="submit">Delete this match ✂️</button>
+          <button class="btn-show btn-detail" type="submit">Delete the match ✂️</button>
         </form>
       </div>
    </div>
