@@ -23,6 +23,7 @@ As a pickleball newbie, I  experienced the frustrations of coordinating matches 
 # 💌 Attributions 
 * # images
 * [PickleTimeLogo](https://www.shutterstock.com/image-vector/powerful-smash-shot-execution-vector-icon-2376962975)
+*[]('/images/pballplaying.png')
 * # css
 * [Copy-paste-css](https://copy-paste-css.com/)
 * [Gradient Maker](https://coolors.co/gradient-maker/ddb4f6-8dd0fc)

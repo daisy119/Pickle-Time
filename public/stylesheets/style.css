@@ -3,6 +3,7 @@ html {
   font-family: 'Maitree', serif;
   font-family: 'Playfair Display', serif;
   font-family: 'Podkova', serif;
+  height: 100%;
 }
 
 /* The Universal Selector */
@@ -15,12 +16,13 @@ html {
 }
 
 body {
-  /* background-color: #81A178;
-   */
   background-color: #9BF8F4;
   /* background-image: url('/images/pickleball_xl.png');
   background-size: cover;
-  background-position: center; */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0; */
   color: #333333;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
@@ -84,7 +86,8 @@ main {
   width: 800px;
   padding: 20px;
   margin: 0 auto;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.9);
+  height: 100%;
 }
 
 h1 {
@@ -122,6 +125,7 @@ section {
 
 a {
   color: #1a1a1a;
+  text-decoration: none;
 }
 
 pre {
@@ -201,6 +205,37 @@ input {
 
 .right {
   margin-left: auto;
+}
+
+.flex{
+  display:flex;
+  gap: var(--gap,1rem);
+}
+
+.logo {
+  margin: 2rem;
+  width: 10%;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > [aria-hidden="true"] {
+  font-weight: 700;
+  margin-inline-end: 0.75em;
 }
 
 
