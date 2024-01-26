@@ -242,10 +242,13 @@ input {
 
 }
 
+
+/* responsive navbar */
 @media (max-width: 35em) {
   .primary-navigation {
     --gap: 2em;
     position: fixed;
+    z-index: 1000;
     inset: 0 0 0 30%;
     background: rgba(109,159,237,0.1);
     backdrop-filter: blur(1rem);
