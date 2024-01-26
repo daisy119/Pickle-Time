@@ -21,25 +21,10 @@
         <td><%= match.date.toLocaleDateString('en-US', {dataStyle : 'short'})%> <%=match.date.toLocaleString('en-US', {dataStyle : 'short', timeStyle:'short'})%></td>
         <td><%= match.friends %></td>
         <td><a href="/matches/<%= match._id %>">🔎</a></td>
-        <!-- <td>
-          <form 
-          action="/matches/<%= match._id %>?_method=DELETE"
-          method="POST"
-          >
-            <button type="submit">X</button>
-          </form>
-        </td> -->
       </tr>
       <% }) %>
     </tbody>
   </table>
-
-
-  <!-- <ul>
-    <% matches.forEach(match => { %>
-      <li>📅 match date: <%= match.date%>   🥅 court-name:<%= match.courtId%> </li>
-    <% }) %>
-  </ul> -->
 </section>
 </main>
 <%- include('../partials/footer') %>

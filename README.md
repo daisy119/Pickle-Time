@@ -32,6 +32,7 @@ As a pickleball newbie, I  experienced the frustrations of coordinating matches 
 * [Flaticon](https://www.flaticon.com/)
 * [CSS Buttons](https://getcssscan.com/css-buttons-examples)
 * [Responsive design](https://youtu.be/HbBMp6yUXO0?si=ewkSnuy17KrDCHoW)
+* [css box shadow](https://getcssscan.com/css-box-shadow-examples)
 
 
 # 🧊 Ice Box  

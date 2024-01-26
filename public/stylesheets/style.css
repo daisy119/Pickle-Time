@@ -16,7 +16,6 @@ html {
 }
 
 body {
-  /* background-color: #9BF8F4; */
   background-image: url('/images/pickleball_xl.png');
   background-size: cover;
   background-position: center;
@@ -38,6 +37,8 @@ body > nav {
   background: -moz-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
   background: -webkit-linear-gradient(90deg, hsla(177, 87%, 79%, 1) 0%, hsla(235, 89%, 70%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9bf8f4", endColorstr="#6f7bf7", GradientType=1 );
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6D9FED", endColorstr="#9BF8F4", GradientType=1 );
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -139,7 +140,6 @@ form > button {
 
   padding: 10px;
   background-color: ghostwhite;
-  /* border-radius: 400px; */
   border: 1px solid #333333;
   cursor: pointer;
   font-size: 18px;
@@ -184,9 +184,9 @@ input {
   color: #333333;
   transition: border .1s linear,background-color .1s linear;
   :focus{
-      border-color: #6f7bf7;
-      color: var(--sds-c-input-text-color-focus);
-      box-shadow: rgb(111,123,247) 0px 0px 3px 0px;
+    border-color: #6f7bf7;
+    color: var(--sds-c-input-text-color-focus);
+    box-shadow: rgb(111,123,247) 0px 0px 3px 0px;
   }
 }
 
@@ -252,6 +252,35 @@ input {
   font-weight: 700;
   margin-inline-end: 0.75em;
 
+}
+
+.text-move
+{   font-size: 100px;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #6f7bf7 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 

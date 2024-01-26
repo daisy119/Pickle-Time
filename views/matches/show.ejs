@@ -19,8 +19,6 @@
     <ul>
       <% match.courts.forEach(court => { %>
         <li><%= court.name %><a href="/courts/<%= court._id %>"> 🔎</a></li>
-    
-
       <% }) %>
     </ul>
   </section>
@@ -54,13 +52,9 @@
           <button class="btn-show btn-detail" type="submit">Delete the match ✂️</button>
         </form>
       </div>
-   </div>
+    </div>
       <% } %>
-    
-
- 
   <% } %>
-
 </main>
   
 <%- include('../partials/footer') %>
