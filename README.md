@@ -1,4 +1,4 @@
-# PickleTime - Game On,Anytime!Pickle Time- Your Match, Your Way
+# Pickle Time - Game On, Anytime! Pickle Time - Your Match, Your Way
 
 ![Alt Text](./public/images/Unit%202.png)
 *Pickle Time* is not just an app. It's your ultimate companion for all things pickleball! Whether you're a seasoned player or just picking up a paddle, *Pickle Time* is here to revolutionize the way you schedule matches, connect with friends, and immerse yourself in the vibrant pickleball community.
@@ -33,6 +33,7 @@ As a pickleball newbie, I  experienced the frustrations of coordinating matches 
 * [CSS Buttons](https://getcssscan.com/css-buttons-examples)
 * [Responsive design](https://youtu.be/HbBMp6yUXO0?si=ewkSnuy17KrDCHoW)
 * [css box shadow](https://getcssscan.com/css-box-shadow-examples)
+* [dynamic text](https://alvarotrigo.com/blog/css-text-animations/)
 
 
 # 🧊 Ice Box  
