@@ -37,7 +37,9 @@ As a pickleball newbie, I  experienced the frustrations of coordinating matches 
 # 🧊 Ice Box  
 - [x] Responsive Design
 - [ ] Create Add Friends Feature
+- [ ] Add Map Integration
 - [ ] Add Current Weather Feature
+- [ ] Add Friend Feature
 - [ ] Confetti
 
 
