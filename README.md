@@ -1,4 +1,5 @@
-# Pickle Time - Game On, Anytime! Pickle Time - Your Match, Your Way
+# Pickle Time 
+## -  Anytime - Your Match, Your Way
 
 ![Alt Text](./public/images/Unit%202.png)
 *Pickle Time* is not just an app. It's your ultimate companion for all things pickleball! Whether you're a seasoned player or just picking up a paddle, *Pickle Time* is here to revolutionize the way you schedule matches, connect with friends, and immerse yourself in the vibrant pickleball community.
@@ -41,7 +42,6 @@ As a pickleball newbie, I  experienced the frustrations of coordinating matches 
 - [ ] Create Add Friends Feature
 - [ ] Add Map Integration
 - [ ] Add Current Weather Feature
-- [ ] Add Friend Feature
 - [ ] Confetti
 
 
