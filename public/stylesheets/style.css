@@ -16,13 +16,13 @@ html {
 }
 
 body {
-  background-color: #9BF8F4;
-  /* background-image: url('/images/pickleball_xl.png');
+  /* background-color: #9BF8F4; */
+  background-image: url('/images/pickleball_xl.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-  padding: 0; */
+  padding: 0;
   color: #333333;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
@@ -226,16 +226,33 @@ input {
   list-style: none;
   padding: 0;
   margin: 0;
-  
+
 }
 
 .primary-navigation a {
   text-decoration: none;
+  background: rgba(109,159,237,0.1);
 }
+
+
 
 .primary-navigation a > [aria-hidden="true"] {
   font-weight: 700;
   margin-inline-end: 0.75em;
+
+}
+
+@media (max-width: 35em) {
+  .primary-navigation {
+    --gap: 2em;
+    position: fixed;
+    inset: 0 0 0 30%;
+    background: rgba(109,159,237,0.1);
+    backdrop-filter: blur(1rem);
+    flex-direction: column;
+    padding: min(30vh,10rem) 2em;
+    
+  }
 }
 
 
