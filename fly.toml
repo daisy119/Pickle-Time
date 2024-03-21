@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for pickleballtracker on 2024-01-23T15:01:12-05:00
+# fly.toml app configuration file generated for pickleballtracker-fragrant-hill-5171 on 2024-03-13T19:19:17-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "pickleballtracker"
-primary_region = "ewr"
+app = 'pickleballtracker-fragrant-hill-5171'
+primary_region = 'ewr'
 
 [build]
 
@@ -14,9 +14,9 @@ primary_region = "ewr"
   auto_stop_machines = true
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
 
 [[vm]]
-  cpu_kind = "shared"
+  memory = '1gb'
+  cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 1024

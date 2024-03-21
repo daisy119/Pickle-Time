@@ -8,7 +8,7 @@ As a pickleball newbie, I  experienced the frustrations of coordinating matches 
 
 
 
-## **[It's Pickle Time](https://pickleballtracker.fly.dev)**
+## **[It's Pickle Time](https://pickleballtracker-fragrant-hill-5171.fly.dev/)**
 ## **[Trello Board](https://trello.com/b/wEddks1y/pickle-ball-tracker)**
 
 # 💻 Technologies used 
